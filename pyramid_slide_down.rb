@@ -13,6 +13,9 @@
 # longest_slide_down([[3], [7, 4], [2, 4, 6], [8, 5, 9, 3]])
 # # => 23
 
+# Tests include some extraordinarily high pyramides so as you can guess, brute-force method is a bad idea unless you have a few centuries to waste. You must come up with something more clever than that.
+# (c) This task is a lyrical version of the Problem 18 and/or Problem 67 on ProjectEuler.
+
 def longest_slide_down(a)
   a.reverse!
   1.upto(a.size-1) do |i|
